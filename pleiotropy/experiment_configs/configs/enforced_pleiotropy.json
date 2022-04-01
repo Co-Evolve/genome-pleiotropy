@@ -1,0 +1,73 @@
+{
+  "experiment": {
+    "config_path": "pleiotropy/experiment_configs/neat_configs/enforced_pleiotropic",
+    "results_dir": "../output/results",
+    "backup_results_dir": "../output/results/backup",
+    "trials": 20,
+    "debug": false,
+    "balanced_locomotion": false
+  },
+  "evolution": {
+    "algorithm": "base_ea",
+    "base_ea": {
+      "mu": 20,
+      "lambda": 20,
+      "generations": 1000
+    }
+  },
+  "pleiotropy": {
+    "genome_pleiotropy": "pleiotropic",
+    "force_shared_path": {
+      "enabled": true,
+      "increasing": true,
+      "start": 0.0,
+      "stop": 0.5,
+      "time": 800
+    }
+  },
+  "execution": {
+    "n_processes": -1,
+    "n_cores_per_process": 1,
+    "hardware": "cpu",
+    "gpu_memory": 4.0,
+    "actor_refresh_frequency": 100
+  },
+  "evaluation": {
+    "visualization": {
+      "render": false,
+      "save": false,
+      "camera_config_path": "meta/camera_config.json",
+      "save_dir": "visualizations/",
+      "save_every_n_steps": 2
+    },
+    "treadmill_mode": true,
+    "time_limit": 300,
+    "num_evaluations": 1,
+    "num_actuation_cycles": 20
+  },
+  "analysis": {
+    "n_best": 20,
+    "n_perturbations": 100
+  },
+  "fitness": {
+    "solved": -1,
+    "dummy": 0
+  },
+  "controller": {
+    "frequency_range": [
+      20,
+      60
+    ]
+  },
+  "morphology": {
+    "resolution": [
+      5,
+      5,
+      5
+    ],
+    "min_n_muscle_voxels": 1
+  },
+  "environment": {
+    "voxel_size": 0.02
+  }
+}

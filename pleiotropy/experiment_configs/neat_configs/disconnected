@@ -1,0 +1,86 @@
+#--- parameters for the CPPN regarding the mountain car experiment  ---#
+
+[NEAT]
+fitness_criterion     = max
+fitness_threshold     = 1000000
+pop_size              = 32
+reset_on_extinction   = False
+
+[DefaultGenome]
+# node activation options
+activation_default      = random
+activation_mutate_rate  = 0.1
+activation_options      = sigmoid sin abs nabs square nsquare sqrt nsqrt
+
+# node aggregation options
+aggregation_default     = sum
+aggregation_mutate_rate = 0.0
+aggregation_options     = sum
+
+# node bias options
+bias_init_mean          = 0.0
+bias_init_stdev         = 0.1
+bias_replace_rate       = 0.005
+bias_mutate_rate        = 0.4
+bias_mutate_power       = 0.01
+bias_max_value          = 1.0
+bias_min_value          = -1.0
+
+# genome compatibility options
+compatibility_disjoint_coefficient = 1.0
+compatibility_weight_coefficient   = 3.0
+
+# connection enable options
+enabled_default         = True
+enabled_mutate_rate     = 0.0
+
+# Genome_seed is either 'none' (default), 'shared_morph_control_path' or 'recurrent_morph_control_path'
+genome_seed             = none
+feed_forward            = True
+initial_connection      = full_nodirect
+
+# connection add/remove rates
+conn_add_prob           = 0.1
+conn_delete_prob        = 0.05
+
+# node add/remove rates
+node_add_prob           = 0.1
+node_delete_prob        = 0.05
+
+# network parameters
+num_hidden              = 0
+num_inputs              = 3
+num_outputs             = 2
+
+# node response options
+response_init_mean      = 1.0
+response_init_stdev     = 0.0
+response_replace_rate   = 0.0
+response_mutate_rate    = 0.1
+response_mutate_power   = 0.01
+response_max_value      = 1.0
+response_min_value      = -1.0
+
+# connection weight options
+weight_max_value        = 3.0
+weight_min_value        = -3.0
+weight_init_mean        = 0.0
+weight_init_stdev       = 1.0
+weight_mutate_rate      = 0.94
+weight_replace_rate     = 0.005
+weight_mutate_power     = 0.01
+
+single_structural_mutation = True
+
+[DefaultSpeciesSet]
+compatibility_threshold = 4.0
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 10
+species_elitism      = 3
+
+[DefaultReproduction]
+elitism            = 3
+survival_threshold = 0.3
+
