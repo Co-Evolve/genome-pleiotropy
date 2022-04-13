@@ -14,6 +14,10 @@ structure in the pleiotropic representation of robot morphology and control to a
 findings provide valuable insights into genetic encoding design, which supply practitioners with a theoretical
 foundation to pursue efficient brain-body co-optimization.
 
+
+https://user-images.githubusercontent.com/28387178/163192651-d1e48d17-be0c-4409-90bc-155ee3822998.mp4
+
+
 ## Usage
 
 Create the anaconda environment:
