@@ -36,3 +36,16 @@ We refer to `pleiotropy/experiment_configs/` for the hyperparameters used in eve
 Metrics are logged and automatically saved on the cloud via [Weights & Biases](https://wandb.ai/site). Genomes are saved locally.
 
 ## Citation
+```
+@inproceedings{10.1145/3520304.3528977,
+author = {Marzougui, Dries and Biondina, Matthijs and wyffels, Francis},
+title = {A Comparative Analysis on Genome Pleiotropy for Evolved Soft Robots},
+year = {2022},
+publisher = {Association for Computing Machinery},
+url = {https://doi.org/10.1145/3520304.3528977},
+doi = {10.1145/3520304.3528977},
+booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion},
+pages = {136–139},
+series = {GECCO '22}
+}
+```
