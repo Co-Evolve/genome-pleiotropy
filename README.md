@@ -1,6 +1,6 @@
 # A Comparative Analysis on Genome Pleiotropy for Evolved Soft Robots
 
-[PDF]() **Abstract**: Biological evolution shapes the body and brain of living creatures together over time. By
+[PDF](https://dl.acm.org/doi/10.1145/3520304.3528977) **Abstract**: Biological evolution shapes the body and brain of living creatures together over time. By
 contrast, in evolutionary robotics, the co-optimization of these subsystems remains challenging. Conflicting mutations
 cause dissociation between morphology and control, which leads to premature convergence. Recent works have proposed
 algorithmic modifications to mitigate the impact of conflicting mutations. However, the importance of genetic design
